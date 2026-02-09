@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8870"
-	"mapversion" "53"
+	"mapversion" "65"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "53"
+	"mapversion" "65"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -106,8 +106,9 @@ entity
 	"targetname" "mc_drop"
 	connections
 	{
-		"OnTrigger" "m_drop_i1Trigger0-1"
+		"OnTrigger" "ml_dropper_blockerDisable0-1"
 		"OnTrigger" "mc_try_dispenserTrigger0-1"
+		"OnTrigger" "m_drop_i1Trigger0-1"
 	}
 	"origin" "-24 8 8"
 	editor
@@ -174,45 +175,47 @@ entity
 }
 entity
 {
-	"id" "168"
-	"classname" "logic_compare"
+	"id" "232"
+	"classname" "logic_case"
 	"angles" "0 0 0"
-	"comparevalue" "1"
-	"initialvalue" "0"
-	"targetname" "mc_in_zone_compare_items"
+	"case01" "1"
+	"case02" "2"
+	"targetname" "mc_memory"
 	connections
 	{
-		"OnEqualTo" "0-1"
+		"OnCase01" "mc_active_item_memorySetValue10-1"
+		"OnCase02" "mc_active_item_memorySetValue20-1"
 	}
-	"origin" "8 0 40"
+	"origin" "8 8 29.911"
 	editor
 	{
 		"color" "0 100 250"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"logicalpos" "[0 1500]"
 	}
 }
 entity
 {
-	"id" "179"
-	"classname" "logic_branch_listener"
+	"id" "234"
+	"classname" "math_counter"
 	"angles" "0 0 0"
-	"branch01" "m_item_is_out_from_zone_i1"
-	"branch02" "m_item_is_out_from_zone_i2"
-	"targetname" "mc_in_zone_compare_is_dual_drops"
+	"max" "2"
+	"min" "0"
+	"startdisabled" "0"
+	"startvalue" "0"
+	"targetname" "mc_active_item_memory"
 	connections
 	{
-		"OnAllTrue" "m_item_is_out_from_zone_i1SetValue00-1"
-		"OnAllTrue" "m_item_is_out_from_zone_i2SetValue00-1"
+		"OutValue" "mc_memoryInValue0-1"
 	}
-	"origin" "8 0 24.0052"
+	"origin" "8 24 29.911"
 	editor
 	{
 		"color" "0 100 250"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
+		"logicalpos" "[0 1000]"
 	}
 }
 cameras

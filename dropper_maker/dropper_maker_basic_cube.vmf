@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8870"
-	"mapversion" "671"
+	"mapversion" "683"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -131,129 +131,132 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "671"
+	"mapversion" "683"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
 	"maxblobcount" "250"
 	"maxpropscreenwidth" "-1"
 	"skyname" "sky_black_nofog"
-	solid
+	hidden
 	{
-		"id" "596"
-		side
+		solid
 		{
-			"id" "7"
-			"plane" "(-32 32 32) (32 32 32) (32 -32 32)"
-			vertices_plus
+			"id" "596"
+			side
 			{
-				"v" "-32 32 32"
-				"v" "32 32 32"
-				"v" "32 -32 32"
-				"v" "-32 -32 32"
+				"id" "7"
+				"plane" "(-32 32 32) (32 32 32) (32 -32 32)"
+				vertices_plus
+				{
+					"v" "-32 32 32"
+					"v" "32 32 32"
+					"v" "32 -32 32"
+					"v" "-32 -32 32"
+				}
+				"material" "TOOLS/TOOLSSKIP"
+				"uaxis" "[0 1 0 32] 1"
+				"vaxis" "[1 0 0 32] 1"
+				"rotation" "90"
+				"lightmapscale" "16"
+				"smoothing_groups" "0"
 			}
-			"material" "TOOLS/TOOLSSKIP"
-			"uaxis" "[0 1 0 32] 1"
-			"vaxis" "[1 0 0 32] 1"
-			"rotation" "90"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "8"
-			"plane" "(-32 -32 -32) (32 -32 -32) (32 32 -32)"
-			vertices_plus
+			side
 			{
-				"v" "-32 -32 -32"
-				"v" "32 -32 -32"
-				"v" "32 32 -32"
-				"v" "-32 32 -32"
+				"id" "8"
+				"plane" "(-32 -32 -32) (32 -32 -32) (32 32 -32)"
+				vertices_plus
+				{
+					"v" "-32 -32 -32"
+					"v" "32 -32 -32"
+					"v" "32 32 -32"
+					"v" "-32 32 -32"
+				}
+				"material" "TOOLS/TOOLSSKIP"
+				"uaxis" "[0 1 0 32] 1"
+				"vaxis" "[-1 0 0 32] 1"
+				"rotation" "90"
+				"lightmapscale" "16"
+				"smoothing_groups" "0"
 			}
-			"material" "TOOLS/TOOLSSKIP"
-			"uaxis" "[0 1 0 32] 1"
-			"vaxis" "[-1 0 0 32] 1"
-			"rotation" "90"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "9"
-			"plane" "(-32 32 32) (-32 -32 32) (-32 -32 -32)"
-			vertices_plus
+			side
 			{
-				"v" "-32 32 32"
-				"v" "-32 -32 32"
-				"v" "-32 -32 -32"
-				"v" "-32 32 -32"
+				"id" "9"
+				"plane" "(-32 32 32) (-32 -32 32) (-32 -32 -32)"
+				vertices_plus
+				{
+					"v" "-32 32 32"
+					"v" "-32 -32 32"
+					"v" "-32 -32 -32"
+					"v" "-32 32 -32"
+				}
+				"material" "TOOLS/TOOLSSKIP"
+				"uaxis" "[0 -1 0 32] 1"
+				"vaxis" "[0 0 -1 32] 1"
+				"rotation" "0"
+				"lightmapscale" "16"
+				"smoothing_groups" "0"
 			}
-			"material" "TOOLS/TOOLSSKIP"
-			"uaxis" "[0 -1 0 32] 1"
-			"vaxis" "[0 0 -1 32] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "10"
-			"plane" "(32 32 -32) (32 -32 -32) (32 -32 32)"
-			vertices_plus
+			side
 			{
-				"v" "32 32 -32"
-				"v" "32 -32 -32"
-				"v" "32 -32 32"
-				"v" "32 32 32"
+				"id" "10"
+				"plane" "(32 32 -32) (32 -32 -32) (32 -32 32)"
+				vertices_plus
+				{
+					"v" "32 32 -32"
+					"v" "32 -32 -32"
+					"v" "32 -32 32"
+					"v" "32 32 32"
+				}
+				"material" "TOOLS/TOOLSSKIP"
+				"uaxis" "[0 1 0 32] 1"
+				"vaxis" "[0 0 -1 32] 1"
+				"rotation" "0"
+				"lightmapscale" "16"
+				"smoothing_groups" "0"
 			}
-			"material" "TOOLS/TOOLSSKIP"
-			"uaxis" "[0 1 0 32] 1"
-			"vaxis" "[0 0 -1 32] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "11"
-			"plane" "(32 32 32) (-32 32 32) (-32 32 -32)"
-			vertices_plus
+			side
 			{
-				"v" "32 32 32"
-				"v" "-32 32 32"
-				"v" "-32 32 -32"
-				"v" "32 32 -32"
+				"id" "11"
+				"plane" "(32 32 32) (-32 32 32) (-32 32 -32)"
+				vertices_plus
+				{
+					"v" "32 32 32"
+					"v" "-32 32 32"
+					"v" "-32 32 -32"
+					"v" "32 32 -32"
+				}
+				"material" "TOOLS/TOOLSSKIP"
+				"uaxis" "[-1 0 0 32] 1"
+				"vaxis" "[0 0 -1 32] 1"
+				"rotation" "0"
+				"lightmapscale" "16"
+				"smoothing_groups" "0"
 			}
-			"material" "TOOLS/TOOLSSKIP"
-			"uaxis" "[-1 0 0 32] 1"
-			"vaxis" "[0 0 -1 32] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "12"
-			"plane" "(32 -32 -32) (-32 -32 -32) (-32 -32 32)"
-			vertices_plus
+			side
 			{
-				"v" "32 -32 -32"
-				"v" "-32 -32 -32"
-				"v" "-32 -32 32"
-				"v" "32 -32 32"
+				"id" "12"
+				"plane" "(32 -32 -32) (-32 -32 -32) (-32 -32 32)"
+				vertices_plus
+				{
+					"v" "32 -32 -32"
+					"v" "-32 -32 -32"
+					"v" "-32 -32 32"
+					"v" "32 -32 32"
+				}
+				"material" "TOOLS/TOOLSSKIP"
+				"uaxis" "[1 0 0 32] 1"
+				"vaxis" "[0 0 -1 32] 1"
+				"rotation" "0"
+				"lightmapscale" "16"
+				"smoothing_groups" "0"
 			}
-			"material" "TOOLS/TOOLSSKIP"
-			"uaxis" "[1 0 0 32] 1"
-			"vaxis" "[0 0 -1 32] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 118 151"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
+			editor
+			{
+				"color" "0 118 151"
+				"visgroupshown" "1"
+				"visgroupautoshown" "1"
+			}
 		}
 	}
 	group
@@ -391,6 +394,16 @@ world
 		{
 			"color" "237 138 0"
 			"groupid" "5848"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "6251"
+		editor
+		{
+			"color" "217 122 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -676,101 +689,6 @@ entity
 }
 entity
 {
-	"id" "2276"
-	"classname" "logic_branch"
-	"angles" "0 0 0"
-	"initialvalue" "0"
-	"targetname" "m_item_is_was_dissolved_by_request_i$id"
-	connections
-	{
-		"OnTrue" "!selfSetValueTest02-1"
-		"OnTrue" "m_proxy_i$idProxyRelay0-1"
-		"OnFalse" "m_proxy_i$idProxyRelay0-1"
-	}
-	"origin" "-8 -24 -24"
-	editor
-	{
-		"color" "237 138 0"
-		"groupid" "3720"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "3661"
-	"classname" "logic_relay"
-	"angles" "0 0 0"
-	"spawnflags" "0"
-	"startdisabled" "$NotDissolveNextItemAfterSelf"
-	"targetname" "m_dissolve_nextitem_i$id"
-	connections
-	{
-		"OnTrigger" "m_dissolve_nextitem_timer_i$idEnable0-1"
-	}
-	"origin" "-24 -24 -8"
-	editor
-	{
-		"color" "237 138 0"
-		"groupid" "3720"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "5097"
-	"classname" "logic_timer"
-	"angles" "0 0 0"
-	"refiretime" "$dislgid_Time"
-	"spawnflags" "0"
-	"startdisabled" "1"
-	"targetname" "m_dissolve_nextitem_timer_i$id"
-	"userandomtime" "0"
-	connections
-	{
-		"OnTimer" "m_item_i$linkageidFireUser10-1"
-		"OnTimer" "!selfDisable0.01-1"
-	}
-	"origin" "-24 -24 -24"
-	editor
-	{
-		"color" "237 138 0"
-		"groupid" "5848"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 5000]"
-	}
-}
-entity
-{
-	"id" "4607"
-	"classname" "logic_relay"
-	"angles" "0 0 0"
-	"spawnflags" "0"
-	"startdisabled" "1"
-	"targetname" "m_dissolve_item_i$id"
-	connections
-	{
-		"OnTrigger" "m_item_i$idFireUser10-1"
-	}
-	"origin" "-8 -24 -8"
-	editor
-	{
-		"color" "237 138 0"
-		"groupid" "5856"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2000]"
-	}
-}
-entity
-{
 	"id" "4"
 	"classname" "func_instance_parms"
 	"parm1" "$id integer 1"
@@ -925,29 +843,6 @@ entity
 }
 entity
 {
-	"id" "946"
-	"classname" "logic_relay"
-	"angles" "0 0 0"
-	"spawnflags" "0"
-	"targetname" "m_add_dissolve_to_item_i$id"
-	connections
-	{
-		"OnTrigger" "!activatorAddOutputOnUser1 !self:Dissolve::0:10-1"
-		"OnTrigger" "!activatorAddOutputOnUser1 m_item_is_was_dissolved_by_request_i$id:SetValueTest:1:0:10-1"
-	}
-	"origin" "24 -24 8"
-	editor
-	{
-		"color" "0 100 250"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Use this command in filter_activator_name only with trigger_multiple"
-		"logicalpos" "[0 6000]"
-	}
-}
-entity
-{
 	"id" "1313"
 	"classname" "logic_relay"
 	"angles" "0 0 0"
@@ -1040,35 +935,12 @@ entity
 }
 entity
 {
-	"id" "2171"
-	"classname" "logic_branch"
-	"angles" "0 0 0"
-	"initialvalue" "0"
-	"targetname" "m_item_is_need_dissolve_after_max_limit_i$id"
-	connections
-	{
-		"OnTrue" "m_item_i$idFireUser10-1"
-		"OnTrue" "m_proxy_i$idProxyRelay0-1"
-		"OnFalse" "m_proxy_i$idProxyRelay0-1"
-	}
-	"origin" "8 -24 8"
-	editor
-	{
-		"color" "0 100 250"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
 	"id" "3605"
 	"classname" "logic_branch"
 	"angles" "0 0 0"
 	"initialvalue" "0"
 	"targetname" "m_item_is_was_spawned_i$id"
-	"origin" "0 8 -24"
+	"origin" "-8 8 -24"
 	editor
 	{
 		"color" "0 100 250"
@@ -1125,10 +997,15 @@ entity
 entity
 {
 	"id" "5608"
-	"classname" "logic_branch"
+	"classname" "logic_branch_listener"
 	"angles" "0 0 0"
-	"initialvalue" "0"
-	"targetname" "m_item_auto_respawn_enabled_i$id"
+	"branch01" "m_allow_repspw_item_i$id"
+	"branch02" "m_repspw_autoreturn_i$id"
+	"targetname" "m_item_autorespawn_check_i$id"
+	connections
+	{
+		"OnAllTrue" "m_repspw_autoreturn_i$idTest0-1"
+	}
 	"origin" "8 -8 -24"
 	editor
 	{
@@ -1185,7 +1062,7 @@ entity
 	"targetname" "m_item_is_dissolves_i$id"
 	connections
 	{
-		"OnTrigger" "m_item_autorespawn_check_i$idTrigger0-1"
+		"OnTrigger" "m_item_autorespawn_check_i$idTest0-1"
 		"OnTrigger" "m_item_is_was_spawned_i$idSetValue00-1"
 		"OnTrigger" "m_dissolve_nextitem_i$idTrigger0-1"
 		"OnTrigger" "m_item_is_out_from_zone_i$idSetValueTest00-1"
@@ -1199,6 +1076,163 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
+entity
+{
+	"id" "6134"
+	"classname" "logic_compare"
+	"angles" "0 0 0"
+	"comparevalue" "$id"
+	"initialvalue" "0"
+	"targetname" "m_lc_memory_check_active_i$id"
+	connections
+	{
+		"OnEqualTo" "mc_active_item_memorySetValue$id0-1"
+	}
+	"origin" "-24 -8 -24"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "6225"
+	"classname" "logic_relay"
+	"angles" "0 0 0"
+	"spawnflags" "0"
+	"startdisabled" "1"
+	"targetname" "m_drop_gate"
+	"origin" "24 -8 8"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "946"
+	"classname" "logic_relay"
+	"angles" "0 0 0"
+	"spawnflags" "0"
+	"targetname" "m_add_dissolve_to_item_i$id"
+	connections
+	{
+		"OnTrigger" "!activatorAddOutputOnUser1 !self:Dissolve::0:10-1"
+		"OnTrigger" "!activatorAddOutputOnUser1 m_item_is_was_dissolved_by_request_i$id:SetValueTest:1:0:10-1"
+	}
+	"origin" "-8 -24 8"
+	editor
+	{
+		"color" "217 122 0"
+		"groupid" "6251"
+		"visgroupid" "17"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Use this command in filter_activator_name only with trigger_multiple"
+		"logicalpos" "[0 6000]"
+	}
+}
+entity
+{
+	"id" "4607"
+	"classname" "logic_relay"
+	"angles" "0 0 0"
+	"spawnflags" "0"
+	"startdisabled" "1"
+	"targetname" "m_dissolve_item_i$id"
+	connections
+	{
+		"OnTrigger" "m_item_i$idFireUser10-1"
+	}
+	"origin" "-8 -24 -8"
+	editor
+	{
+		"color" "217 122 0"
+		"groupid" "6251"
+		"visgroupid" "17"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "3661"
+	"classname" "logic_relay"
+	"angles" "0 0 0"
+	"spawnflags" "0"
+	"startdisabled" "$NotDissolveNextItemAfterSelf"
+	"targetname" "m_dissolve_nextitem_i$id"
+	connections
+	{
+		"OnTrigger" "m_dissolve_nextitem_timer_i$idEnable0-1"
+	}
+	"origin" "-24 -24 -8"
+	editor
+	{
+		"color" "217 122 0"
+		"groupid" "6251"
+		"visgroupid" "17"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "5097"
+	"classname" "logic_timer"
+	"angles" "0 0 0"
+	"refiretime" "$dislgid_Time"
+	"spawnflags" "0"
+	"startdisabled" "1"
+	"targetname" "m_dissolve_nextitem_timer_i$id"
+	"userandomtime" "0"
+	connections
+	{
+		"OnTimer" "m_item_i$linkageidFireUser10-1"
+		"OnTimer" "!selfDisable0.01-1"
+	}
+	"origin" "-24 -24 -24"
+	editor
+	{
+		"color" "217 122 0"
+		"groupid" "6251"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "2276"
+	"classname" "logic_branch"
+	"angles" "0 0 0"
+	"initialvalue" "0"
+	"targetname" "m_item_is_was_dissolved_by_request_i$id"
+	connections
+	{
+		"OnTrue" "!selfSetValueTest02-1"
+		"OnTrue" "m_proxy_i$idProxyRelay0-1"
+		"OnFalse" "m_proxy_i$idProxyRelay0-1"
+	}
+	"origin" "-8 -24 -24"
+	editor
+	{
+		"color" "217 122 0"
+		"groupid" "6251"
+		"visgroupid" "17"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
 cameras
 {
 	"activecamera" "-1"
@@ -1206,4 +1240,8 @@ cameras
 cordons
 {
 	"active" "0"
+}
+quickhide
+{
+	"count" "1"
 }
